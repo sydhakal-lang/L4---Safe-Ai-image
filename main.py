@@ -129,7 +129,7 @@ def main():
             st.error(err)
             return
 
-        st.image(img, caption="Generated Image", use_container_width=True)
+        st.image(img, caption="Generated Images", use_container_width=True)
         st.session_state.generated_image = img
 
     img = st.session_state.get("generated_image")
